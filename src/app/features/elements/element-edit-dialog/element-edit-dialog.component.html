@@ -1,0 +1,15 @@
+<div class="">
+  <h1 mat-dialog-title>Edit</h1>
+  <mat-dialog-content>
+    <mat-form-field>
+      <mat-label>Element</mat-label>
+      <input matInput [(ngModel)]="data.value">
+    </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <div class="flex justify-between w-full">
+      <button mat-button mat-dialog-close>Cancel</button>
+      <button mat-button [mat-dialog-close]="data.value">Save</button>
+    </div>
+  </mat-dialog-actions>
+</div>
